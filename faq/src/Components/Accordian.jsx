@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import plus from "../assets/images/icon-plus.svg";
 import minus from "../assets/images/icon-minus.svg";
+import {Collapse} from 'react-collapse';
 export default function Accordian(props) {
   const [open, setOpen] = useState(false);
   return (
@@ -15,15 +16,30 @@ export default function Accordian(props) {
             setOpen(!open);
           }}
         >
-            {
-                open?<img className="cursor-pointer  transition-all duration-300 ease-linear" src={minus} alt="plus" />:<img className="cursor-pointer  transition-all duration-300 ease-linear" src={plus} alt="plus" />
-            }
-          
+          {open ? (
+            <img
+              className="cursor-pointer  transition-all duration-300 ease-linear"
+              src={minus}
+              alt="plus"
+            />
+          ) : (
+            <img
+              className="cursor-pointer  transition-all duration-300 ease-linear"
+              src={plus}
+              alt="plus"
+            />
+          )}
         </button>
       </div>
-      <div className={`ans text-[0.8rem] text-[#8c6991] anidown ${open?"block":"hidden"} transition-all duration-500 ease-linear`}>
+      <Collapse isOpened={open}>
+      <div
+        className="ans text-[0.8rem] text-[#8c6991] anidown  transition-all duration-500 ease-linear"
+      >
         <p>{props.answer}</p>
       </div>
+        
+      </Collapse>
+      
     </section>
   );
 }

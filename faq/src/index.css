@@ -21,6 +21,9 @@ body {
 {
     animation: down 0.5s 1 linear;
 }
+.ReactCollapse--collapse {
+  transition: height 350ms;
+}
 @keyframes down {
     0%
     {
@@ -31,6 +34,7 @@ body {
         height: 50%;
     }
     
+
 }
 @media (max-width: 600px) {
   body {
