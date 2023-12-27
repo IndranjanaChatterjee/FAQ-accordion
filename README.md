@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/IndranjanaChatterjee/Room-homepage)
-- Live Site URL: [live site URL](https://room-homepage-two-delta.vercel.app/)
+- Solution URL: [solution URL](https://github.com/IndranjanaChatterjee/FAQ-accordion)
+- Live Site URL: [live site URL](https://faq-accordion-drab.vercel.app/)
 
 
 ## My process
