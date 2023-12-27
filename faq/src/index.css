@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   
 }
 @media (max-width: 600px) {
@@ -22,5 +23,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: local;
+    color:hsl(275, 100%, 97%);
   }
 }

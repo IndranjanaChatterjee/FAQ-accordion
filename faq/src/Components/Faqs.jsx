@@ -3,10 +3,10 @@ import Accordian from "./Accordian";
 import star from '../assets/images/icon-star.svg';
 export default function Faqs() {
   return (
-    <div className="w-[32rem] flex flex-col justify-start gap-[1rem] bg-[#ffffff] p-[2rem] shadow-lg rounded-[1rem]" >
+    <div className="md:w-[32rem] w-[20rem] m-[1rem] font-['Work_Sans'] flex flex-col justify-start gap-[1rem] bg-[#ffffff] p-[2rem] shadow-lg rounded-[1rem]" >
         <span className="flex flex-row justify-start gap-[1rem]">
             <img src={star} alt="star" />
-            <h1 className="text-3xl">FAQs</h1>
+            <h1 className="text-3xl text-[#2f1533] font-extrabold">FAQs</h1>
         </span>
       <Accordian
         question="What is Frontend Mentor, and how will it help me?"
