@@ -1,13 +1,14 @@
 import { useState } from 'react'
 
 import './App.css'
+import Faqs from './Components/Faqs'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='font-bold'>h1</h1>
+      <Faqs/>
     </>
   )
 }
