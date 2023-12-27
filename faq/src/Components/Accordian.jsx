@@ -6,11 +6,11 @@ export default function Accordian(props) {
   return (
     <section className="acc">
       <div className="question flex flex-row justify-between text-[#2f1533] font-bold">
-        <h1 className="text-[1rem] hover:text-[#b256d4] cursor-pointer">
+        <h1 className="text-[1rem] hover:text-[#b256d4] cursor-pointer  w-[17rem]">
           {props.question}
         </h1>
         <button
-          className="cursor-pointer hover:text-[#ffffff] transition-all duration-300 ease-linear"
+          className="cursor-pointer hover:text-[#ffffff]  transition-all duration-300 ease-linear"
           onClick={() => {
             setOpen(!open);
           }}
